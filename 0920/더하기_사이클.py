@@ -6,8 +6,8 @@ N = 0
 #0보다 크거나 같고, 99보다 작거나 같은 정수가 주어질 때 
 while True:
   N = int(input())
-  if(N<0)or(N>99):
-    print(" -1<n<99 ")
+  if(N<0)or(N>100):
+    print(" -1<n<101 ")
     continue
   else:
     break
