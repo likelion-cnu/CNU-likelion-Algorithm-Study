@@ -24,6 +24,7 @@
 ## 파일 및 폴더 구성
 - Beakjoon/깃허브 아이디/week_0/문제명
 - Programmers/깃허브 아이디/week_0/문제명
+
 ex) Beakjoon/alsdud019/week_1/평균은넘겠지.py
 
 ## Pull Request 및 커밋 메시지 규칙
