@@ -23,8 +23,8 @@ for c in check:
     num.append(words.count(c))
 # print(num)
 
-i = num.index(max(num)) # count리스트에서 가장 큰 값의 인덱스 반환
-if num.count(max(num)) > 1:
+i = num.index(max(num)) # num 리스트에서 가장 큰 값의 인덱스 반환
+if num.count(max(num)) > 1: # max 값이 1개 초과라면 ? 출력
     print('?')
 else:
     print(check[i])
