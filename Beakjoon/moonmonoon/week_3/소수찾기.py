@@ -12,17 +12,17 @@ while True:
     if N <= 100:
         break
 
-count = 0
 prime_count = 0
 num_list = list(map(int, input().split()))
 
 if len(num_list) == N: # 입력받은 N과 리스트 개수 같은지 비교
     for n in num_list:
+        count = 0
         if n <= 1000: # 입력받은 리스트 요소가 1000 이하인지 비교
             for i in range(1, n+1):
                 if n % i == 0:
                     count += 1
             if count == 2: # 1과 자기 자신으로만 나누어 떨어지면
                 prime_count += 1 # 소수 카운터 1증가
-            count = 0
+
 print(prime_count)
