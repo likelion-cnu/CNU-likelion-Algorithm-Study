@@ -20,3 +20,5 @@ def solution(participant, completion):
             answer = key
 
     return answer
+
+# 100점!
