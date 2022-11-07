@@ -2,3 +2,12 @@
 ._.DS_Store
 **/.DS_Store
 **/._.DS_Store
+
+# IntelliJ project files
+.idea
+.idea/*.xml
+*.iml
+out
+gen
+build
+rebel.xml
