@@ -33,5 +33,26 @@ def solution(progresses, speeds):
     99일은 1일 걸림 -> 80일짜리 기다렸다가 함께 완성
     
     """
+    
+    answer = [] # 결과를 담을 리스트
+    time = 0 # 작업까지 걸린 시간
+    worked = 0 # 이전 완료된 작업
+
+    
+    while len(progresses) > 0: # 작업 리스트가 빌 때까지 반복
+        if (progresses[0] + speeds[0] * time) >= 100: # 작업이 완료된 경우 작업 완료 횟수 1을 증가시킨다.
+            progresses.pop(0) # FIFO
+            speeds.pop(0)   
+            worked += 1 
+        
+        else: # 작업이 완료 되지않은 경우 
+            if worked > 0: # 만약 완료된 이전 작업이 있다면 정답 리스트에 추가
+                answer.append(worked)    
+                worked = 0
+            
+            time += 1 # 작업에 걸리는 시간을 계속 더해준다.
+    
+    answer.append(worked) # 마지막 작업은 else문을 안거치기에 answer에 직접 추가해줌
     return answer
+
 
